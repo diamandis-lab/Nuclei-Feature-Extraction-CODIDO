@@ -86,7 +86,7 @@ if __name__ == '__main__':
                 # Generate masks for all image 
                 generate_mask(file)
 
-        subprocess.run(["cellprofiler", "-c", "-r", "-p", "pipeline.cppipe", "-i", "temp", "-o", "outputs"])
+        subprocess.run(["cellprofiler", "-c", "-r", "-p", "pipeline_v2.cppipe", "-i", "temp", "-o", "outputs"])
 
         over_time = time.time()
         info_end = p.memory_full_info().uss/1024/1024
